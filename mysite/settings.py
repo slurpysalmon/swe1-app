@@ -74,7 +74,8 @@ WSGI_APPLICATION = "mysite.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-if os.path.exists("/var/app/data"):
+
+if os.path.isdir("/var/app"):
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
