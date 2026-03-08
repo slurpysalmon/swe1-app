@@ -19,6 +19,7 @@ script:
   - black --check .
   - flake8 .
   - coverage run manage.py test
+  - coveralls -v --service=travis-pro
 
 after_success:
   - coveralls
