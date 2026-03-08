@@ -1,5 +1,9 @@
 asgiref==3.11.1
+black
+coverage
+coveralls
 Django==6.0.2
+flake8
 gunicorn==25.1.0
 packaging==26.0
 pytz==2025.2
