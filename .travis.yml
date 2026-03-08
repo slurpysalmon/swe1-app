@@ -22,3 +22,15 @@ script:
 
 after_success:
   - coveralls --service=travis-pro
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: "us-east-1"
+  app: "djangotutorial"
+  env: "django-env"
+  bucket_name: "elasticbeanstalk-us-east-1-853536782152"
+  edge: true
+  on:
+    branch: main
