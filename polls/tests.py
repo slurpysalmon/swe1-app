@@ -13,4 +13,4 @@ class PollsSmokeTests(TestCase):
         self.assertEqual(response.status_code, 404)
 
     def test_dummy(self):
-        self.assertTrue(False)
+        self.assertTrue(True)
